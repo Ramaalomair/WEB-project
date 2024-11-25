@@ -739,6 +739,18 @@ function updateCardContainer(cards) {
 }
 
 }
+window.onload = function() {
+    // Check if it's the first time the user visits the page
+    if (!sessionStorage.getItem('visited')) {
+        // Clear localStorage on first visit
+        localStorage.clear();
+        sessionStorage.setItem('visited', 'true');  // Mark as visited
+    }
+
+    // Display products
+    displayProducts();
+};
+
 
 // Add product function :
 function addProduct() {
@@ -804,7 +816,7 @@ function addProduct() {
     };
 
     reader.readAsDataURL(productPhoto); 
- // localStorage.clear();
+   // localStorage.clear();
 }
 
 
@@ -834,7 +846,7 @@ function displayProducts() {
         container.appendChild(productElement);
 
     });
-  //  localStorage.clear();
+    //localStorage.clear();
 }
 
 function checkboxes() {
@@ -967,7 +979,7 @@ function checkForms(event) {
 
         // Update checkboxes after adding a new offer
         checkboxes();
-    //  localStorage.clear();
+      localStorage.clear();
 
     });
 }
@@ -1003,7 +1015,7 @@ function loadOffers() {
 
         // Reinitialize the checkbox behavior after loading offers
         checkbox();
-  //   localStorage.clear();
+        localStorage.clear();
     }
 }
 
