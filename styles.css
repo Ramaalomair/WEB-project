@@ -1550,7 +1550,7 @@ a.active-bh {
 .original-price {
     text-decoration: line-through;
     color: #999; /* Light gray color for the original price */
-    margin-right: 10px; /* Space between original and discounted price */
+    margin-right: 1.66em; /* Space between original and discounted price */
 }
 
 /* New discounted price */
@@ -1606,8 +1606,8 @@ a.active-bh {
 	color:white;
 	display: grid;
     place-items: center; /* This is shorthand for both justify-items and align-items */
-    padding: 10px 20px;   /* Optional: add padding to make the button larger */
-    font-size: 16px;   
+    padding: 1.66em 3.33em;   /* Optional: add padding to make the button larger */
+    font-size: 2.66em;   
   }
   
   /* CSS for category page */
